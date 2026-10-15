@@ -19,9 +19,10 @@ fun CaixaDeEntrada (
 ) {
 
     OutlinedTextField(
-
-        modifier = modifier.fillMaxWidth(),
+        modifier = modifier
+            .fillMaxWidth(),
         label = { Text(text = label) },
+        singleLine = true,
         placeholder = { Text(text = placeholder) },
         keyboardOptions = KeyboardOptions(keyboardType = keyboard),
         value = value,
